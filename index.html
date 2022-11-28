@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cartão Personalizado | Nubank</title>
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/svg-inject.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <aside class="options">
+        <div class="options-container">
+          <header class="header">
+            <img
+              src="img/logo_nubank.svg"
+              alt="Nubank"
+              onload="SVGInject(this)"
+            />
+          </header>
+
+          <h1 class="title">Deixe seu roxinho com a sua cara :)</h1>
+
+          <div class="input-name">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" data-js="name" />
+          </div>
+
+          <div class="input-colors">
+            <label>Selecione a cor do cartão</label>
+            <input type="button" class="color1" data-js="btn-color" />
+            <input type="button" class="color2" data-js="btn-color" />
+            <input type="button" class="color3" data-js="btn-color" />
+            <input type="button" class="color4" data-js="btn-color" />
+            <input type="button" class="color5" data-js="btn-color" />
+          </div>
+
+          <div class="input-model">
+            <label>Selecione o modelo do cartão</label>
+            <div class="flex">
+              <input type="button" value="Horizontal" data-js="btn-model" />
+              <input type="button" value="Vertical" data-js="btn-model" />
+            </div>
+          </div>
+
+          <div class="input-logo">
+            <label>Logo Nubank</label>
+            <div class="flex">
+              <button id="logo1" data-js="btn-logo">
+                <img
+                  src="img/logo_nubank.svg"
+                  alt="Nubank"
+                  onload="SVGInject(this)"
+                />
+              </button>
+
+              <button id="logo2" data-js="btn-logo">
+                <img
+                  src="img/logo_nubank.svg"
+                  alt="Nubank"
+                  onload="SVGInject(this)"
+                />
+              </button>
+            </div>
+          </div>
+
+          <footer>
+            <ul class="social-media">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/joaomarcosrochaaraujo/"
+                  target="_blank"
+                >
+                  <img src="img/linkedin.svg" alt="Linkedin" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/Joaomarcosr" target="_blank">
+                  <img src="img/github.svg" alt="GitHub" />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                >
+                  <img src="img/instagram.svg" alt="Instagram" />
+                </a>
+              </li>
+            </ul>
+
+            <p class="copy">
+              Todos os direitos reservados para o
+              <a href="https://nubank.com.br/" target="_blank">Nubank</a>
+            </p>
+          </footer>
+        </div>
+      </aside>
+
+      <section class="preview">
+        <div class="card" data-js="card">
+          <div class="card-bg" data-js="card-bg"></div>
+          <div class="card-flag">
+            <img src="img/card_flag.svg" alt="Flag" />
+          </div>
+
+          <div class="card-flex">
+            <div class="card-logo">
+              <img
+                src="img/logo_nubank.svg"
+                alt="Nubank"
+                onload="SVGInject(this)"
+              />
+            </div>
+            <p class="card-name"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
